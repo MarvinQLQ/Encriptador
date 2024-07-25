@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Marvin</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>ENCRIPTADO</h1>
+    <header class="header">
+        <h1 class="titulo">ENCRIPTADO</h1>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <div>
-             <input type="text">
+             <input class="campo_texto" type="text" placeholder="Ingrese el texto aqui">
             </div>
             <div>
-                <a href="">Encriptar</a>
-                <a href="">Desencriptar</a>
+                <a class="bto1" href="">Encriptar</a>
+                <a class="bto2" href="">Desencriptar</a>
             </div>
         </section>
         <section>
             <h3>Resultado</h3>
-            <input type="text">
+            <input class="campo_resultado" type="text" placeholder="Texto encriptado">
         </section>
     </main>
 
     <footer>
-        
+        <a class="presentacion__enlaces__link" href="https://github.com/MarvinQLQ">
+            <img src="./assets/github.png">
+            Github
+        </a>
+        <a class="presentacion__enlaces__link" href="https://linkedin.com/in/">
+            <img src="./assets/linkedin.png">
+            Linkedin
+        </a>
+
     </footer>
-    
+    <script src="app.js"></script>
 </body>
 </html>
