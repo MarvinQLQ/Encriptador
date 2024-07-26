@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ea">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +8,31 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="titulo">ENCRIPTADO</h1>
+        <a href=""><img src="./assets/logo.png" alt=""></a>
     </header>
 
     <main class="main">
         <section>
             <div>
-             <input class="campo_texto" type="text" placeholder="Ingrese el texto aqui">
+            <textarea class="campo_texto" placeholder="Ingrese el texto aqui"></textarea>
             </div>
-            <div>
-                <a class="bto1" href="">Encriptar</a>
-                <a class="bto2" href="">Desencriptar</a>
+            <div class="boton">
+                <p class="reglas">Solo letras minúsculas sin acentos</p>
+                <div class="botones">
+                    <a class="bto1" href="">Encriptar</a>
+                    <a class="bto2" href="">Desencriptar</a>
+                </div>
             </div>
         </section>
-        <section>
-            <h3>Resultado</h3>
-            <input class="campo_resultado" type="text" placeholder="Texto encriptado">
+        <section class="resultado">
+            
+            <textarea class="campo_resultado" placeholder="Texto Encriptado"></textarea>
+             
+            
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <a class="presentacion__enlaces__link" href="https://github.com/MarvinQLQ">
             <img src="./assets/github.png">
             Github

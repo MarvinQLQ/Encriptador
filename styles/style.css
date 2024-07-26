@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
+    --color--resultado:#ffffff;
     --color--fondo: #F3F5FC;
     --color--bto1: #0A3871;
     --color--bto2: #D8DFE8;
     --fuente: "Inter", sans-serif;
 }
+
 
 
 * {
@@ -17,15 +19,100 @@ body{
     box-sizing: border-box;
     font-family: var(--fuente);
     background-color: var(--color--fondo) ;
+    color: var(--color--bto1);
+    margin: 5px;
+}
+.header{
+
+    padding: 2% 0% 0% 15%;
+
+}
+
+.main{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2px;
 }
 
 .campo_texto{
+    box-sizing: border-box;
     font-family: var(--fuente);
-    font-size: 30px;
-    width: 350px;
-    height: 150px;
+    font-size: 20px;
+    width: 450px;
+    height: 380px;
     margin: 10px;
     padding: 25px;
-    border: 5px var(--color--bto2);
+    background-color: var(--color--fondo);
+    border: 5px var(--color--fondo);
     border-radius: 15px;
+}
+.campo_resultado{
+   
+    font-family: var(--fuente);
+    font-size: 20px;
+    width: 250px;
+    height: 450px;
+    margin: 10px;
+    padding: 25px;
+    background-color: var(--color--resultado);
+    border: 5px var(--color--fondo);
+    border-radius: 15px;
+
+}
+
+
+.botones{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.reglas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fuente);
+    font-size: 10px; 
+     
+}
+
+.bto1{
+  padding: 15px 40px;
+  font-family: var(--fuente);
+  font-size: 12px;
+  background-color: var(--color--bto1);
+  color: var(--color--resultado);
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+.bto1:hover{
+    background-color: #1b3c64;
+}
+.bto2{
+    
+  padding: 15px 40px;
+  font-family: var(--fuente);
+  font-size: 12px;
+  background-color: var(--color--bto2);
+  color: var(--color--bto1);
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+.bto2:hover{
+    background-color: #eaedf1;
+}
+
+.footer{
+    padding: 7px;
+    text-align: center;
+
 }
