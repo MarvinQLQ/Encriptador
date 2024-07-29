@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Marvin</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -17,7 +20,7 @@
             <textarea class="campo_texto" placeholder="Ingrese el texto aqui"></textarea>
             </div>
             <div class="boton">
-                <p class="reglas">Solo letras minúsculas sin acentos</p>
+                <p class="reglas"><i class="fa-solid fa-circle-exclamation"></i>   Solo letras minúsculas sin acentos, caracteres especiales</p>
                 <div class="botones">
                     <a class="bto1" href="">Encriptar</a>
                     <a class="bto2" href="">Desencriptar</a>
@@ -26,7 +29,12 @@
         </section>
         <section class="resultado">
             
-            <textarea class="campo_resultado" placeholder="Texto Encriptado"></textarea>
+                
+                <textarea class="campo_resultado" style="background-image:url(assets/imagen.png)" 
+                placeholder="Ningun mensaje fue encontrado.              Ingresa el texto que deseas Desencriptar" ></textarea>
+                <a class="bto1" href="">Copiar</a>
+            
+            
              
             
         </section>
@@ -37,7 +45,7 @@
             <img src="./assets/github.png">
             Github
         </a>
-        <a class="presentacion__enlaces__link" href="https://linkedin.com/in/">
+        <a class="presentacion__enlaces__link" href="https://linkedin.com/in/marvin-blackburn/">
             <img src="./assets/linkedin.png">
             Linkedin
         </a>

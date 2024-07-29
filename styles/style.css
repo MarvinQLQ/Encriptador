@@ -47,6 +47,15 @@ body{
     background-color: var(--color--fondo);
     border: 5px var(--color--fondo);
     border-radius: 15px;
+    color: var(--color--bto1);
+}
+.resultado{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+
 }
 .campo_resultado{
    
@@ -59,6 +68,9 @@ body{
     background-color: var(--color--resultado);
     border: 5px var(--color--fondo);
     border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: right 60px top 180px; /* Ajusta la posición según tus necesidades */
+    background-size: 200px 200px;
 
 }
 
@@ -74,10 +86,13 @@ body{
 
 .reglas{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     font-family: var(--fuente);
     font-size: 10px; 
+    color: var(--color--bto1);
+    gap: 7px;
      
 }
 
@@ -110,9 +125,35 @@ body{
 .bto2:hover{
     background-color: #eaedf1;
 }
+.presentacion__enlaces__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color--bto1);  
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color);
+    font-family: var(--fuente);
+}
+
+.presentacion__enlaces__link:hover{
+  background-color: #315683;
+}
 
 .footer{
-    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color:var(--color--resultado);
+    background-color: var(--color--bto1);
+    padding: 20px;
     text-align: center;
-
+    font-family: var(--fuente);
+    font-size: 1rem;
+    font-weight: 400;
 }
