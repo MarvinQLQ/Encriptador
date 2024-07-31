@@ -5,6 +5,7 @@
     --color--fondo: #F3F5FC;
     --color--bto1: #0A3871;
     --color--bto2: #D8DFE8;
+    --color--alerta: #f80808;
     --fuente: "Inter", sans-serif;
 }
 
@@ -34,6 +35,9 @@ body{
     align-items: center;
     justify-content: space-around;
     gap: 2px;
+}
+.alerta{
+    color: var(--color--alerta);
 }
 
 .campo_texto{
