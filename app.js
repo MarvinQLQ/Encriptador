@@ -44,7 +44,7 @@ function encriptarTexto(texto){
 
     let encriptacion = document.getElementById('textoEncriptar').value;
     if (!validarTexto(encriptacion)){
-      asignarTexto("#alerta","¡Recuerda, el texto no debe llevar mayusculas,ni caracteres especiales!");
+      mostrarAlerta("alerta","¡Recuerda, el texto no debe llevar mayusculas,ni caracteres especiales!");
     }else{
     let crip = encriptarTextoMarvin(encriptacion);
     document.getElementById('resultado').textContent = crip;
@@ -55,7 +55,7 @@ function desencriptarTexto(texto){
 
     let desencriptado = document.getElementById('textoEncriptar').value;
     if (!validarTexto(desencriptado)){
-        asignarTexto("#alerta","¡Recuerda, el texto no debe llevar mayusculas,ni caracteres especiales!");
+        mostrarAlerta("alerta","¡Recuerda, el texto no debe llevar mayusculas,ni caracteres especiales!");
       }else{
     let descrip = desencriptarTextoMarvin(desencriptado);
     document.getElementById('resultado').textContent = descrip;
@@ -65,11 +65,22 @@ function copiarTexto(texto){
     const resultado = document.getElementById('resultado');
     resultado.select();
     document.execCommand('copy');
-    alert("Texto copiado al portapapeles");
-    asignarTexto("#resultado","")
-
+    mostrarAlerta("copiado","Copiado con exito!");
 }
 
+function mostrarAlerta(elemento,mensaje) {
+    const alerta = document.getElementById(elemento);
+    alerta.textContent = mensaje;
+    setTimeout(() => {
+        alerta.textContent = '';
+    }, 2500);
+}
 
-asignarTexto("#resultado","Que esperas para empezar a encriptar")
+asignarTexto("#resultado","¡¡Que esperas para empezar a Encriptar o Desencriptar!!");
+
+
+
+
+
+
 
