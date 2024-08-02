@@ -40,6 +40,11 @@ function asignarTexto (elemento,texto){
     return;
 }
 
+function limpiarCampo(){
+    
+    asignarTexto("#resultado","")
+}
+
 function encriptarTexto(texto){
 
     let encriptacion = document.getElementById('textoEncriptar').value;
@@ -62,10 +67,17 @@ function desencriptarTexto(texto){
 }
 }
 function copiarTexto(texto){
-    const resultado = document.getElementById('resultado');
+
+    let resul = document.querySelector('#resultado');
+    
+        const resultado = document.getElementById('resultado');
     resultado.select();
     document.execCommand('copy');
     mostrarAlerta("copiado","Copiado con exito!");
+    
+    
+    
+    
 }
 
 function mostrarAlerta(elemento,mensaje) {
